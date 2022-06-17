@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(220, 14%, 75%);
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+
+/*===============================
+          Typography
+===============================*/
+h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-top: 0;
+}
+
+h1, h2,
+.cartNum {
+    color: black;
+}
+
+.textOrange {
+    color: hsl(26, 100%, 55%);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+
+.textOrange, .mini-text,
+.prevPrice, .cartNum,
+.btnCart {
+    font-weight: 700;
+}
+
+.mini-text {
+    font-size: 1rem;
+    margin-left: 2em;
+    margin-bottom: 0;
+    background-color: hsl(25, 100%, 94%);
+    padding: .3em .7em;
+    border-radius: 5px;
+    color: hsl(26, 100%, 55%);
+}
+
+.prevPrice {
+    text-decoration: line-through;
+}
+
+
+/*===============================
+            Layout
+===============================*/
+
+.mobileNav {
+    display: none;
+}
+
+.container {
+    width: 100vw;
+}
+
+.nav-lists,
+.nav-container,
+nav,
+.main-content,
+.priceText,
+.cart-container, 
+.cartBox, .miniImg,
+.navImg {
+    display: flex;
+}
+
+.nav-container,
+nav, .priceText,
+.cart-container, 
+.cartBox, .navImg {
+    align-items: center;
+}
+.nav-container,nav,
+.main-content,
+.cart-container, .navImg,
+.miniImg {
+    justify-content: space-between;
+}
+
+.nav-container {
+    padding: 1em 2em;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+
+li {
+    list-style: none;
+    padding-left: 2em;
+}
+
+.main-content {
+    margin: 5em auto;
+    width: 80%;
+}
+
+.avatarImg {
+    width: 30%;
+}
+
+.imgContent, 
+.textContent {
+    width: 45%;
+}
+
+.miniImg img {
+    border-radius: 8px;
+    width: 20%;
+}
+
+.miniImg img:first-child {
+    border: 3px solid hsl(26, 100%, 55%);
+}
+
+.textContent {
+    margin-top: 2em;
+}
+
+.hero {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+.cartNum {
+    padding: .18em 4em;
+}
+
+.cartBox {
+    background-color: hsl(223, 64%, 98%);
+    padding: 0 1em;
+    border-radius: 10px;
+    align-content: space-between;
+}
+
+.cartBox {
+    flex-direction: row;
+}
+
+.cartB {
+    margin-right: 1em;
+}
+
+.btnCart {
+    background-color: hsl(26, 100%, 55%);
+    padding: 1em 5em;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.previous,
+.nextItem {
+    display: none;
+}
+
+/*===============================
+           Media Query
+===============================*/
+
+@media (max-width: 600px) {
+.mobileNav, 
+.navImg {
+    display: inline;
+}
+
+.nav-container {
+    padding: 1em;
+    border: none;
+}
+
+.icon {
+    width: 60%;
+}
+
+.mobileNav {
+    width: 5%;
+}
+
+.nav-lists, 
+.miniImg {
+    display: none;
+}
+
+.main-content,
+.cart-container {
+    flex-direction: column;
+}
+
+.main-content,
+.textContent {
+    margin: 0;
+}
+ 
+.textContent {
+    width: 90vw;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.imgContent {
+    width: 100vw;
+}
+
+.hero {
+    border-radius: 0;
+    margin-bottom: 0;
+    width: 100%;
+    position: relative;
+}
+
+.avatarImg {
+    width: 15%;
+    margin-left: 1em;
+}
+
+h1, h2 {
+    font-size: 1.5rem;
+}
+
+.textOrange {
+    font-size: .7rem;
+}
+
+.textContent p {
+    font-size: .7rem;
+}
+
+.prevPrice {
+    margin-top: auto;
+}
+
+.btnCart {
+    font-size: .8rem;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.price {
+    display: flex;
+    margin-bottom: 1em;
+    justify-content: space-between;
+}
+
+.cartB {
+    width: 15%;
+}
+
+.cartBox {
+    width: 100%;
+    padding:  0 2em;
+}
+
+.cartNum {
+    padding: .75em 11em;
+}
+
+.cart-container {
+    width: 90vw;
+}
+
+.previous,
+.nextItem {
+    display: block;
+    position: absolute;
+    background-color: white;
+    padding: .5em 1em;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    top: 35%;
+}
+
+.previous {
+    left: 4%;
+}
+
+.nextItem {
+   right: 4%;
+}
+}
